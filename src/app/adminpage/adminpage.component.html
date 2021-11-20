@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Admin page</title>
+      <link rel="stylesheet" href="/adminpage/adminpage.component.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      
+   </head>
+   <body>
+      <nav>
+         <label class="logo">Event Management System</label>
+         <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li>
+               <a href="/venue" >Manage Venue </a>
+              <!-- <i class="fas fa-caret-down"></i>
+               </a>
+               <ul>
+                  <li><a href="#">Venue1</a></li>
+                  <li><a href="#">Venue2</a></li>
+                  <li><a href="#">Venue3</a></li>
+               </ul> -->
+            </li>
+            <li>
+               <a href="/create-event">Manage Event </a>
+               <!-- <i class="fas fa-caret-down"></i>
+               </a>
+               <ul *ngFor="let emp of employees">
+                <li>
+                  {{ emp.eid }}{{ emp.ename }}{{ emp.email }}{{ emp.password}}{{ emp.gender }}
+                </li>
+              </ul> 
+               <ul>
+                  <li><a href="#">Event1</a></li>
+                  <li><a href="#">Event2</a></li>
+                  <li>
+                     <a href="#">Bookings
+                     <i class="fas fa-caret-right"></i>
+                     </a>
+                     <ul>
+                        <li><a href="#">View bookings</a></li>
+                        <li><a href="#">Booking history</a></li>
+                        <li><a href="#">pendings</a></li>
+                     </ul>
+                  </li>
+               </ul> -->
+            </li>
+            <li><a href="/customerhome">notifications</a></li>
+            <li><a href="#">Feedbacks</a></li>
+         </ul>
+      </nav>
+      <section></section>
+   </body>
+</html>

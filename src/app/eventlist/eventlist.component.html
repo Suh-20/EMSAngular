@@ -1,0 +1,20 @@
+<p>eventlist works!</p>
+
+
+
+
+<ul *ngFor="let eve of events">
+  <li>
+    <a
+      routerLink="/editEve/{{ eve.eid }}"
+      routerLinkActive="active"
+      class="list-group-item list-group-item-action list-group-item-primary"
+    >
+      <span
+        >{{ eve.eid }}--{{ eve.emname }}--{{ eve.etype }}--{{ eve.eamt }}
+        </span
+      >
+    </a>
+    <button (click)="onDelete(eve)">Delete</button>
+  </li>
+</ul>

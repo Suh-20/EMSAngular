@@ -1,0 +1,18 @@
+<p>customerlist works!</p>
+
+<ul *ngFor="let cstr of customers">
+    <li>
+      <a
+        routerLink="/editCustomer/{{ cstr.customerid }}"
+        routerLinkActive="active"
+        class="list-group-item list-group-item-action list-group-item-primary"
+      >
+        <span
+          >{{ cstr.customerid }}--{{ cstr.cstrname }}--{{ cstr.contactno }}--{{ cstr.emailid }}--
+          {{ cstr.password }}</span
+        >
+      </a>
+      <button (click)="onDelete(cstr)">Delete</button>
+    </li>
+  </ul>
+  

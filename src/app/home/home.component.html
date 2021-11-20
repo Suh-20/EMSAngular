@@ -1,0 +1,75 @@
+<p>home works!</p>
+
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="home.component.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+     
+   </head>
+<body>
+  <div class="container">
+    <div class="title">WELCOME TO EVENT MS<br> BOOK AN EVENT</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Event type</span>
+            <input type="text" [(ngModel)]="homeDetails.etype"  placeholder="Enter Event type" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Venue Name</span>
+            <input type="text" [(ngModel)]="homeDetails.vname" placeholder="Enter Venue" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Venue type</span>
+            <input type="text" [(ngModel)]="homeDetails.vtype" placeholder="Enter venue type" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Event Date</span>
+            <input type="text" [(ngModel)]="homeDetails.date" placeholder="Enter Event Date" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Equipments</span>
+            <input type="text" [(ngModel)]="homeDetails.equipments" placeholder="Equiqments" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Number of guests</span>
+            <input type="text" [(ngModel)]="homeDetails.nguests" placeholder="Number of Guests" required>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" [(ngModel)]="homeDetails.fooditems"  name="gender" id="dot-1">
+          <input type="radio" [(ngModel)]="homeDetails.fooditems"  name="gender" id="dot-2">
+          <input type="radio" [(ngModel)]="homeDetails.fooditems"  name="gender" id="dot-3">
+          <span class="gender-title">Food Items</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Brunch</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Buffet</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Puddings</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit"(click)="addCustomerPage()" value="Book" /> 
+          
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+
+<div class="container">
+  <div class="form-group">
+    <label for="txtcstrname">Customer Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="txtcstrname"
+      [(ngModel)]="customerDetails.customername"
+      placeholder="Enter EName"
+    />
+    <div class="form-group">
+      <label for="numcno">Contact number</label>
+      <input
+        type="number"
+        class="form-control"
+        id="numcno"
+        [(ngModel)]="customerDetails.contactno"
+        placeholder="Enter EName"
+      />
+  </div>
+  <div class="form-group">
+    <label for="lblemail" class="form-label">Email Id</label>
+    <input
+      type="email"
+      name="txtemail"
+      class="form-control"
+      [(ngModel)]="customerDetails.emailid"
+      id="lblemail"
+      placeholder="name@example.com"
+    />
+  </div>
+  <div class="form-group">
+    <label for="lblPassword1" class="form-label">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="lblPassword1"
+      [(ngModel)]="customerDetails.password"
+    />
+  </div>
+  <div class="form-group">
+    <button (click)="addCustomer()" class="btn btn-primary" onclick="location.href = '/login';">
+      Register
+    </button>
+  </div>
+</div>

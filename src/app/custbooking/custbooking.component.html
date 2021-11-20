@@ -1,0 +1,47 @@
+<p>custbooking works!</p>
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="custbooking.component.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+     
+   </head>
+<body>
+  <div class="container">
+    <div class="title">BOOKING</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Booking ID</span>
+            <input type="text"  [(ngModel)]="custbookingDetails.bid" placeholder="Booking ID" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Food items</span>
+            <input type="text"  [(ngModel)]="custbookingDetails.fitems" placeholder="Food Items" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Food Cost</span>
+            <input type="text"  [(ngModel)]="custbookingDetails.fcost" placeholder="Food Cost" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Food ID</span>
+            <input type="text"  [(ngModel)]="custbookingDetails.fid" placeholder="Food ID" required>
+          </div>
+          
+        </div>
+        <div class="button">
+          <input type="submit" (click)="addBook()" value="Book" /> 
+          
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

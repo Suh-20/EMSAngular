@@ -1,0 +1,17 @@
+
+<ul *ngFor="let ven of venues">
+    <li>
+      <a
+        routerLink="/editVen/{{ ven.venueid }}"
+        routerLinkActive="active"
+        class="list-group-item list-group-item-action list-group-item-primary"
+      >
+        <span
+          >{{ ven.venueid }}--{{ ven.venuename }}--{{ ven.venueplace }}--{{ ven.contact }}
+          </span
+        >
+      </a>
+      <button (click)="onDelete(ven)">Delete</button>
+    </li>
+  </ul>
+  <p>venuelist</p>
